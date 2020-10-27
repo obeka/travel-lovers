@@ -1,0 +1,59 @@
+.bucket-page-container{
+  display: flex;
+  flex-direction: row;
+}
+.bucket-list{
+  margin: .4rem;
+  text-align: center;
+}
+
+.bucket-list h2,
+.bucket-list h3,
+.bucket-list h4{
+color: #3f51b5;
+}
+
+.bucket-list ul{
+  list-style: none;
+  padding: 0;
+  overflow: scroll; /* Add the ability to scroll */
+  height: 78vh;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  }
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+.bucket-list ul::-webkit-scrollbar {
+  display: none;
+}
+
+.bucketmap-container{
+  flex-shrink: 1;
+  flex-grow: 1;
+  flex-basis: 70%;
+  width: 62rem;
+  height: 88vh;
+  margin: .4rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  
+}
+.bucket-list{
+  flex-shrink: 1;
+  flex-grow: 1;
+  flex-basis: 25%;
+}
+@media (max-width: 768px) {
+  .bucket-page-container{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  
+  .bucketmap-container{
+    height: 38vh;
+    width: 98%; 
+  }
+  .bucket-list ul{
+    height: 38vh;
+  }
+
+}

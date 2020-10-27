@@ -1,0 +1,18 @@
+.comment-card{
+    display: flex;
+}
+
+.card{
+    display: flex;
+    flex-direction: column; /*  detail fixing styele */
+    justify-content: space-between;
+}
+
+
+.comment-button{
+    display: flex;
+    justify-content: flex-end;
+}
+.comment-profile{
+    margin:7px;
+}
